@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+message Request {
+    bytes A = 1;
+    bytes B = 2;
+    bytes x = 3;
+    int32 offset = 4;
+}
+
+message Result {
+    bytes x = 1;
+}
+
+service JacobiCalc {
+    rpc Calc(Request) returns (Result) {}
+}

@@ -1,0 +1,62 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: client_1",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--client", "--nodes", "127.0.0.1:5001"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: client_2",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--client", "--nodes", "127.0.0.1:5001", "127.0.0.1:5002"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: client_3",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--client", "--nodes", "127.0.0.1:5001", "127.0.0.1:5002", "127.0.0.1:5003"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: server_1",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--server", "--port", "5001"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: server_2",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--server", "--port", "5002"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: server_3",
+            "type": "python",
+            "request": "launch",
+            "program": "jacobi.py",
+            "args": ["--server", "--port", "5003"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
